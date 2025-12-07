@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: clientbootapp-virtual-threads
+
+server:
+  tomcat:
+    threads:
+      max: 10
