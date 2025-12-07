@@ -9,6 +9,16 @@ Virtual Threads (Project Loom) are lightweight threads that revolutionize concur
 - Non-blocking: Blocking operations don't block OS threads
 - Managed by JVM: Scheduled on platform threads (carrier threads)
 - Compatible: Same API as java.lang.Thread
+
+# Key Takeaways:
+- Use Virtual Threads for I/O-bound workloads: They excel when tasks spend time waiting
+- Avoid thread-local variables: They can cause memory leaks with virtual threads
+- Use structured concurrency: For better error handling and resource management
+- Prefer ReentrantLock over synchronized: Prevents pinning virtual threads
+- Monitor performance: Virtual threads reduce memory usage but may increase CPU overhead
+- Backward compatible: Existing code works, but may need adjustments for optimal performance
+
+
   
 
 What is a Java Thread, Why do we need them ?
