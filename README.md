@@ -5,13 +5,11 @@
 Virtual Threads (Project Loom) are lightweight threads that revolutionize concurrent programming in Java. Unlike platform threads (traditional threads), virtual threads are managed by the JVM, not the OS kernel.
 
 # Key Characteristics:
-Lightweight: Can have millions of virtual threads (vs thousands of platform threads)
-
-Non-blocking: Blocking operations don't block OS threads
-
-Managed by JVM: Scheduled on platform threads (carrier threads)
-
-Compatible: Same API as java.lang.Thread
+- Lightweight: Can have millions of virtual threads (vs thousands of platform threads)
+- Non-blocking: Blocking operations don't block OS threads
+- Managed by JVM: Scheduled on platform threads (carrier threads)
+- Compatible: Same API as java.lang.Thread
+  
 
 What is a Java Thread, Why do we need them ?
 - Starting Java 21, we have two types of Threads:
